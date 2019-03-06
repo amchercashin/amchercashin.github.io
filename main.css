@@ -3,12 +3,22 @@ body {
     padding: 0px;
     width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 80%;
+}
+
+header {
+    flex-basis: 100%;
+    /* align-self: center; */
+    text-align: center;
 }
 
 /* section > * {

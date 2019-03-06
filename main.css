@@ -30,8 +30,19 @@ figure {
     width: 7cm;
     /* height: min-content; */
     height: 7cm;
-
+    margin-block-end: 3em;
 }
+
+@media screen and (max-width: 800px) {
+    figure {
+        width: 2cm;
+        height: 2cm;
+        /* margin-block-end: 3em; */
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+    }
+}
+
 
 /* a {
     width: 100%;

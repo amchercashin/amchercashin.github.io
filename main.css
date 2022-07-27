@@ -111,7 +111,7 @@ figure img.topleft {
     z-index: 0;
     position: relative;
     top: -100%;
-    left: 103%;
+    left: 105%;
 }
 
 figcaption {
@@ -151,7 +151,7 @@ figcaption {
         z-index: 0;
         position: relative;
         top: -100%;
-        left: 103%;
+        left: 104%;
     }
 
 }

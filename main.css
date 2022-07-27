@@ -70,15 +70,7 @@ figure {
     margin-top: 0em;
 }
 
-@media screen and (max-width: 800px) {
-    figure {
-        width: 2cm;
-        height: 2cm;
-        /* margin-block-end: 3em; */
-        margin-inline-start: 10px;
-        margin-inline-end: 10px;
-    }
-}
+
 
 
 /* a {
@@ -88,10 +80,8 @@ figure {
 
 figure img {
     object-fit: cover;
-    /* width: 100%; */
     height: 100%;
     width: 100%;
-    height: 100%;
     padding:0px;
     border:0px solid #021a40;
     background-color: #ebe2b0;
@@ -105,6 +95,25 @@ figure img {
     position: relative;
 }
 
+figure img.topleft {
+    object-fit: fill;
+    height: 20%;
+    width: 20%;
+    padding:0px;
+    border:0px solid #021a40;
+    background-color: #ebe2b0;
+    border-radius: 10%;
+    box-shadow: inset 0 7em 10em -5em rgba(255,255,255,0.6),
+    0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+    0 1em 2em -0.75em rgba(100,100,100,0.75),
+    0 1em 3em -0.5em rgba(100,100,100,0.5),
+    0 3em 3em -0.25em rgba(100,100,100,0.2);
+    z-index: 0;
+    position: relative;
+    top: -100%;
+    left: 103%;
+}
+
 figcaption {
     text-align: center;
     background-color: rgba(79, 44, 16, 0.7);
@@ -115,4 +124,34 @@ figcaption {
     float: right;
     color: white;
     z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    figure {
+        width: 2cm;
+        height: 2cm;
+        /* margin-block-end: 3em; */
+        margin-inline-start: 18px;
+        margin-inline-end: 18px;
+    }
+
+    figure img.topleft {
+        object-fit: fill;
+        height: 35%;
+        width: 35%;
+        padding:0px;
+        border:0px solid #021a40;
+        background-color: #ebe2b0;
+        border-radius: 10%;
+        box-shadow: inset 0 7em 10em -5em rgba(255,255,255,0.6),
+        0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+        0 1em 2em -0.75em rgba(100,100,100,0.75),
+        0 1em 3em -0.5em rgba(100,100,100,0.5),
+        0 3em 3em -0.25em rgba(100,100,100,0.2);
+        z-index: 0;
+        position: relative;
+        top: -100%;
+        left: 103%;
+    }
+
 }

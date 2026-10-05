@@ -133,6 +133,20 @@ figcaption {
         /* margin-block-end: 3em; */
         margin-inline-start: 18px;
         margin-inline-end: 18px;
+        position: relative;
+    }
+
+    /* 2cm tiles: scale the caption down and pin it to the tile bottom,
+       so long titles grow upward instead of covering the whole icon */
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        float: none;
+        box-sizing: border-box;
+        font-size: 0.65em;
+        line-height: 1.15;
     }
 
     figure img.topleft {

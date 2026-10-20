@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена</title>
+  <script>
+    // Старые ссылки вида /heroincome/... ведут в Рантье по новому адресу.
+    (function (l) {
+      if (l.pathname === '/heroincome' || l.pathname.indexOf('/heroincome/') === 0) {
+        l.replace('/rantie' + l.pathname.slice('/heroincome'.length) + l.search + l.hash);
+      }
+    })(window.location);
+  </script>
+  <style>
+    html, body { margin: 0; font-family: system-ui, sans-serif; }
+    main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 24px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <p>Такой страницы нет. <a href="/">На главную</a></p>
+  </main>
+</body>
+</html>
